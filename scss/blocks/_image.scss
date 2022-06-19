@@ -1,0 +1,105 @@
+.image {
+    width: 100%;
+    position: relative;
+    padding-top: 170px;
+}
+
+.hero__content{
+    width: 100%;
+    position: relative;
+    padding-left: 685px;
+    padding-top: 140px;
+}
+
+.image::before{
+    display: block;
+    position: absolute ;
+    width: 100%;
+    height: 890px;
+    background-image: url(/img/runners.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 890px;
+    content: '';
+}
+
+.image__title {
+    margin: 0;
+    margin-top: 170px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.image__text {
+    margin-top: 30px;
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    width: 452px;
+    border-left: 3px solid #FFFFFF;
+}
+
+.image__link{
+    margin: 0;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    width: 260px;
+    height: 51px;
+    background: #EA625C;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:375px) {
+    .image {
+        padding-top: 70px;
+    }
+    .image::before {
+        background-size: 375px 518px;
+    }
+    .hero__content{
+        padding: 10px;
+    }
+    .image::before{
+        display: block;
+        position: absolute ;
+        width: 375px;
+        height: 538px;
+        background-image: url(/img/runners.jpg);
+        background-repeat: no-repeat;
+        background-size: 375px 538px;
+        content: '';
+    }
+    .image__title {
+        margin: 0;
+        margin-top: 96px;
+        font-size: 46px;
+        line-height: 120%;
+    }
+    .image__text {
+        margin: 0;
+        margin-top: 30px;
+        font-size: 14px;
+        line-height: 150%;  
+        width: unset;
+    }
+    .image__link {
+        padding: 12px;
+        width: 192px;
+        font-size: 18px;
+        line-height: 150%;
+    }
+}
